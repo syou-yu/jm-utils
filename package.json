@@ -1,0 +1,23 @@
+{
+  "name": "jm-utils",
+  "version": "1.0.0",
+  "description": "personal JavaScript utils",
+  "main": "dist/jm-utils.esm.js",
+  "author": "",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "npm run clean && cross-env NODE_ENV=dev rollup -w -c config/rollup.config.dev.js",
+    "build": "npm run clean && cross-env NODE_ENV=production rollup -c config/rollup.config.prod.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.8.2",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-serve": "^0.6.0",
+    "rollup-plugin-terser": "^5.3.0"
+  }
+}
