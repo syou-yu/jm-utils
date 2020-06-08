@@ -8,7 +8,7 @@ export default [
   {
     input: 'src/main.js',
     output: {
-      name: '_',
+      name: 'jmUtils',
       file: 'dist/jm-utils.min.js',
       format: 'umd' // 兼容 IIFE, AMD, CJS 三种模块规范
     },
@@ -21,8 +21,10 @@ export default [
         exclude: ['node_modules/**']
       }),
       serve({
+        open: true,
+        host: 'localhost',
         port: 3000,
-        contentBase: ['']
+        verbose: true,
       })
     ],
   },
