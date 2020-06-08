@@ -1,5 +1,7 @@
-import foo from './foo';
+import * as type from './type';
+import * as device from './device';
 
-export default function () {
-  console.log(`test${foo}`);
+export default {
+  type,
+  device,
 }
