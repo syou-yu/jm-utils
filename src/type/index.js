@@ -1,6 +1,4 @@
-/**
- * 类型判断的工具函数
- */
+// 类型判断的工具函数
 
 const toString = Object.prototype.toString;
 
