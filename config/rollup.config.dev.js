@@ -18,7 +18,10 @@ export default [
         include: "node_modules/**"
       }),
       buble({  // transpile ES2015+ to ES5
-        exclude: ['node_modules/**']
+        exclude: ['node_modules/**'],
+        transforms: {
+          asyncAwait: false,
+        },
       }),
       serve({
         open: true,
@@ -40,7 +43,10 @@ export default [
         include: "node_modules/**"
       }),
       buble({  // transpile ES2015+ to ES5
-        exclude: ['node_modules/**']
+        exclude: ['node_modules/**'],
+        transforms: {
+          asyncAwait: false,
+        },
       })
     ],
   }
